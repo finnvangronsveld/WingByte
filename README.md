@@ -2,8 +2,8 @@
 
 ## Team [2]
 
-| Pages    | Name                                  | Class   | GitHub Username                 |
-|:---------|:--------------------------------------|:--------|:--------------------------------|
+| Pages    | Name                |
+|:---------|:--------------------|
 | student1 | [Dmitrij] |
 | student2 | [Finn] |
 | student3 | [Wesley] |
