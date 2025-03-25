@@ -1,9 +1,15 @@
-
-
-
-
 .dbackground01 {
     background-image: url('../images/dbackground01.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.dbackground02 {
+    background-image: url('../images/dbackground02.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
