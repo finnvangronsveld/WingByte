@@ -1,25 +1,9 @@
-/*import symbolen en fonts*/
 @import "";
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css";
 
-
-
-
-/*
-.nummer1 {background-image: url('../assets/img/WingByteLogoMainBG.png');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;}    */
-
-
 .insta-section {
-
     position: relative;
     height: 400px;
-
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png');
     background-size: cover;
     background-position: center;
@@ -34,9 +18,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
-    /* Donkere overlay, pas alpha aan voor meer/minder transparantie */
     z-index: 2;
-
 }
 
 .insta-section > * {
@@ -44,73 +26,55 @@
     z-index: 3;
 }
 
-/* Ensure the airplane container stays within the header */
 .masthead {
     position: relative;
-    /* Make the header the positioning context for the airplane */
     overflow: hidden;
-    /* Hide anything that moves outside the header */
 }
 
-/* Animation for flying airplane */
 @keyframes flying {
     0% {
         transform: translateX(0) scaleX(1);
-        /* Start from the left side with normal orientation */
     }
 
     50% {
         transform: translateX(100%) scaleX(1);
-        /* Move to the right side */
     }
 
     51% {
         transform: translateX(100%) scaleX(-1);
-        /* Flip the airplane after hitting the right side */
     }
 
     100% {
         transform: translateX(0) scaleX(-1);
-        /* Return to the left side with flipped orientation */
     }
 }
 
-/* Apply animation to the airplane element */
 .airplane-animation {
     position: absolute;
-    /* Position it inside the masthead */
     top: 50%;
-    /* Vertically center it in the header */
     left: 0;
-    /* Start from the left side of the header */
     transform: translateY(-50%);
-    /* Adjust to truly center it vertically */
     width: 70%;
-    /* Adjust the size of the airplane */
 }
 
 .dt07 {
-    padding: 3rem
+    padding: 3rem;
 }
 
 .pica {
-
     border-radius: 20px;
-    height: 30rem
+    height: 30rem;
 }
 
 .card-img-top {
     padding: 10px;
-    border-radius: 20px
+    border-radius: 20px;
 }
-
 
 section.cta {
     position: relative;
     padding: 15rem 0;
-    /* Pas dit aan voor de gewenste hoogte van je sectie */
     background-image: url(../assets/img/Wallpaper3.png);
-    /* Voeg hier je achtergrond in */
     background-size: cover;
     background-position: center;
 }
@@ -118,21 +82,15 @@ section.cta {
 section.cta .cta-content {
     position: absolute;
     bottom: 0;
-    /* Zorgt ervoor dat de inhoud aan de onderkant van de sectie komt */
     left: 50%;
     transform: translateX(-50%);
-    /* Centreert de inhoud horizontaal */
     text-align: center;
-    /* Centreert de tekst binnen de container */
     padding-bottom: 2rem;
-    /* Voeg wat padding toe voor een nette ruimte */
     z-index: 1;
-    /* Zorg ervoor dat de inhoud boven de achtergrond komt */
 }
 
 section.cta h2 {
     font-size: 3rem;
-    /* Pas de tekstgrootte aan naar behoefte */
     margin-bottom: 1rem;
 }
 
@@ -141,23 +99,16 @@ section.cta .btn {
     margin-bottom: 7rem;
 }
 
-
 .cta {
-    height: 50rem
+    height: 50rem;
 }
-
 
 :root {
     --oranje: #F26444 !important;
-    /* Primary color */
     --blauw: #020540 !important;
-    /* Primary dark color */
     --oranjedrk: #F2594B !important;
-    /* Secondary color */
     --licht: #F2F2F2 !important;
-    /* Neutral light */
     --donker: #010326 !important;
-    /* Neutral dark */
 }
 
 ::selection {
@@ -170,7 +121,6 @@ body {
     color: var(--blauw) !important;
 }
 
-/* Example usage */
 .navbar {
     background-color: white !important;
 }
@@ -183,7 +133,6 @@ body {
     color: var(--blauw) !important;
 }
 
-/* Example for buttons */
 .btn-primary {
     background-color: var(--oranje) !important;
     border-color: var(--oranjedrk) !important;
@@ -209,11 +158,8 @@ body {
     border-color: var(--oranjedrk) !important;
 }
 
-
 body {
     font-family: 'Chakra Petch', sans-serif !important;
-    /* Tekst */
-
 }
 
 h1,
@@ -227,5 +173,90 @@ h6,
 .font-alt,
 .dimi09 {
     font-family: 'Tektur', sans-serif !important;
-    /* Titels */
+}
+
+#mainNav {
+    height: 80px;
+    /*border-bottom: 2px groove var(--blauw);*/
+}
+
+.responsive-logo {
+    height: 70px;
+    width: auto;
+}
+
+
+.accordion-toggle-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1;
+    padding: 0 0.5rem;
+    cursor: pointer;
+}
+
+.accordion-toggle-btn.collapsed::before {
+    content: '+';
+}
+
+.accordion-toggle-btn:not(.collapsed)::before {
+    content: '−';
+}
+
+
+
+@media (max-width: 1399px) {
+    .navbar-toggler {
+        background-color: var(--oranje) !important;
+        border: none;
+        width: 150px;
+    }
+
+    .navbar-toggler-icon {
+        background-color: white;
+    }
+
+    .navbar-collapse {
+        background-color: var(--oranje) !important;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        color: white !important;
+        text-align: center;
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: var(--blauw) !important;
+    }
+
+    .navbar-nav .btn {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navbar-nav .btn:hover {
+        background-color: var(--blauw) !important;
+        border-color: var(--oranjedrk) !important;
+        color: white !important;
+    }
+
+    .knoppert {
+        background-color: white;
+        font-size: larger;
+        border: 1px solid #000;
+        border-radius: 20px;
+        color: var(--oranje);
+        padding: 10px;
+        width: 190px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
 }
